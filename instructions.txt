@@ -1,0 +1,234 @@
+https://remotestack.io/ionic-http-requests-with-httpclient-get-post-put-delete-tutorial/
+
+➜  ionic ionic start ionic-rest-api blank --type=angular
+✔ Preparing directory ./ionic-rest-api in 1.65ms
+✔ Downloading and extracting blank starter in 694.22ms
+> ionic integrations enable capacitor --quiet -- ionic-rest-api io.ionic.starter
+> npm i --save -E @capacitor/core@latest
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+npm WARN deprecated source-map-resolve@0.6.0: See https://github.com/lydell/source-map-resolve#deprecated
+npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+
+added 1229 packages, and audited 1230 packages in 2m
+
+138 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+> npm i -D -E @capacitor/cli@latest
+
+added 30 packages, and audited 1260 packages in 8s
+
+139 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+> npm i --save -E @capacitor/haptics @capacitor/app @capacitor/keyboard @capacitor/status-bar
+
+added 4 packages, and audited 1264 packages in 5s
+
+139 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+> capacitor init ionic-rest-api io.ionic.starter --web-dir www
+✔ Creating capacitor.config.ts in /Users/binu.varghese/source/ionic/ionic-rest-api in 3.43ms
+[success] capacitor.config.ts created!
+
+Next steps:
+https://capacitorjs.com/docs/getting-started#where-to-go-next
+[OK] Integration capacitor added!
+
+Installing dependencies may take several minutes.
+
+  ──────────────────────────────────────────────────────────────
+
+        Ionic Appflow, the mobile DevOps solution by Ionic
+
+           Continuously build, deploy, and ship apps 🚀
+        Focus on building apps while we automate the rest 🎁
+
+                 👉  https://ion.link/appflow  👈
+
+  ──────────────────────────────────────────────────────────────
+
+
+> npm i
+
+up to date, audited 1264 packages in 2s
+
+139 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+> git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+Initialized empty Git repository in /Users/binu.varghese/source/ionic/ionic-rest-api/.git/
+
+Join the Ionic Community! 💙
+
+Connect with millions of developers on the Ionic Forum and get access to live
+events, news updates, and more.
+
+? Create free Ionic account? No
+> git add -A
+> git commit -m "Initial commit" --no-gpg-sign
+[master (root-commit) 1b14a0f] Initial commit
+ 40 files changed, 28751 insertions(+)
+ create mode 100644 .browserslistrc
+ create mode 100644 .editorconfig
+ create mode 100644 .eslintrc.json
+ create mode 100644 .gitignore
+ create mode 100644 angular.json
+ create mode 100644 capacitor.config.ts
+ create mode 100644 e2e/protractor.conf.js
+ create mode 100644 e2e/src/app.e2e-spec.ts
+ create mode 100644 e2e/src/app.po.ts
+ create mode 100644 e2e/tsconfig.json
+ create mode 100644 ionic.config.json
+ create mode 100644 karma.conf.js
+ create mode 100644 package-lock.json
+ create mode 100644 package.json
+ create mode 100644 src/app/app-routing.module.ts
+ create mode 100644 src/app/app.component.html
+ create mode 100644 src/app/app.component.scss
+ create mode 100644 src/app/app.component.spec.ts
+ create mode 100644 src/app/app.component.ts
+ create mode 100644 src/app/app.module.ts
+ create mode 100644 src/app/home/home-routing.module.ts
+ create mode 100644 src/app/home/home.module.ts
+ create mode 100644 src/app/home/home.page.html
+ create mode 100644 src/app/home/home.page.scss
+ create mode 100644 src/app/home/home.page.spec.ts
+ create mode 100644 src/app/home/home.page.ts
+ create mode 100644 src/assets/icon/favicon.png
+ create mode 100644 src/assets/shapes.svg
+ create mode 100644 src/environments/environment.prod.ts
+ create mode 100644 src/environments/environment.ts
+ create mode 100644 src/global.scss
+ create mode 100644 src/index.html
+ create mode 100644 src/main.ts
+ create mode 100644 src/polyfills.ts
+ create mode 100644 src/test.ts
+ create mode 100644 src/theme/variables.scss
+ create mode 100644 src/zone-flags.ts
+ create mode 100644 tsconfig.app.json
+ create mode 100644 tsconfig.json
+ create mode 100644 tsconfig.spec.json
+
+Your Ionic app is ready! Follow these next steps:
+
+- Go to your new project: cd ./ionic-rest-api
+- Run ionic serve within the app directory to see your app in the browser
+- Run ionic capacitor add to add a native iOS or Android project using Capacitor
+- Generate your app icon and splash screens using cordova-res --skip-config
+--copy
+- Explore the Ionic docs for components, tutorials, and more:
+https://ion.link/docs
+- Building an enterprise app? Ionic has Enterprise Support and Features:
+https://ion.link/enterprise-edition
+
+  ─────────────────────────────────────────────────
+
+     Ionic CLI update available: 6.18.1 → 6.18.2
+          Run npm i -g @ionic/cli to update
+
+  ─────────────────────────────────────────────────
+
+➜  ionic cd ionic-rest-api
+➜  ionic-rest-api git:(master) ng generate page create
+Node.js version v17.3.0 detected.
+Odd numbered Node.js versions will not enter LTS status and should not be used for production. For more information, please see https://nodejs.org/en/about/releases/.
+CREATE src/app/create/create-routing.module.ts (347 bytes)
+CREATE src/app/create/create.module.ts (472 bytes)
+CREATE src/app/create/create.page.scss (0 bytes)
+CREATE src/app/create/create.page.html (125 bytes)
+CREATE src/app/create/create.page.spec.ts (661 bytes)
+CREATE src/app/create/create.page.ts (256 bytes)
+UPDATE src/app/app-routing.module.ts (611 bytes)
+➜  ionic-rest-api git:(master) ✗ ng generate page list
+Node.js version v17.3.0 detected.
+Odd numbered Node.js versions will not enter LTS status and should not be used for production. For more information, please see https://nodejs.org/en/about/releases/.
+CREATE src/app/list/list-routing.module.ts (339 bytes)
+CREATE src/app/list/list.module.ts (458 bytes)
+CREATE src/app/list/list.page.scss (0 bytes)
+CREATE src/app/list/list.page.html (123 bytes)
+CREATE src/app/list/list.page.spec.ts (647 bytes)
+CREATE src/app/list/list.page.ts (248 bytes)
+UPDATE src/app/app-routing.module.ts (720 bytes)
+➜  ionic-rest-api git:(master) ✗ ng generate page update
+Node.js version v17.3.0 detected.
+Odd numbered Node.js versions will not enter LTS status and should not be used for production. For more information, please see https://nodejs.org/en/about/releases/.
+CREATE src/app/update/update-routing.module.ts (347 bytes)
+CREATE src/app/update/update.module.ts (472 bytes)
+CREATE src/app/update/update.page.scss (0 bytes)
+CREATE src/app/update/update.page.html (125 bytes)
+CREATE src/app/update/update.page.spec.ts (661 bytes)
+CREATE src/app/update/update.page.ts (256 bytes)
+UPDATE src/app/app-routing.module.ts (837 bytes)
+➜  ionic-rest-api git:(master) ✗ code .
+➜  ionic-rest-api git:(master) ✗ cd
+➜  ~ cd source/ionic/ionic-rest-api
+➜  ionic-rest-api git:(master) ✗ ng generate service services/userCrud
+Node.js version v17.3.0 detected.
+Odd numbered Node.js versions will not enter LTS status and should not be used for production. For more information, please see https://nodejs.org/en/about/releases/.
+CREATE src/app/services/user-crud.service.spec.ts (368 bytes)
+CREATE src/app/services/user-crud.service.ts (137 bytes)
+➜  ionic-rest-api git:(master) ✗ npm i @ionic/lab --save-dev
+
+added 16 packages, and audited 1280 packages in 5s
+
+139 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+➜  ionic-rest-api git:(master) ✗ ionic serve -l
+
+
+Code Changes
+============
+
+app-routing.ts 
+Pointed home to create
+
+app.component.html 
+added navigation links to List and Create pages
+
+app.module.ts
+imported HttpClientModule
+
+
+npm i -g json-server
+mkdit API
+vi API/database.json
+put json data in the database.
+serve it as local api server
+
+json-server --watch API/database.json
+
+Add code to do REST CRUD
+services/userCrud.service.ts
+
+CRUD
+----
+
+create.module.ts -- Add ReactiveForm import
+create.page.ts -- Add code to do Create
+create.page.html -- HTML code to create screen
+
+list.page.ts - Add code to list
+list.page.html - HTML code to list
+
+update.module.ts -- Add ReactiveForm import
+update.page.ts -- Add code to do update
+update.page.html -- HTML code to update screen
